@@ -17,15 +17,15 @@ public class Controller : MonoBehaviour {
 
         if (Input.GetKey(KeyCode.UpArrow))
         {
-            Player1.GetComponent<Rigidbody2D>().velocity = new Vector3(0f, 5f, 0f);
+            Player1.GetComponent<Rigidbody2D>().velocity = new Vector2(0f, 5f);
         }
         else if (Input.GetKey(KeyCode.DownArrow))
         {
-            Player1.GetComponent<Rigidbody2D>().velocity = new Vector3(0f, -5f, 0f);
+            Player1.GetComponent<Rigidbody2D>().velocity = new Vector2(0f, -5f);
         }
         else if (!Input.anyKey)
         {
-            Player1.GetComponent<Rigidbody2D>().velocity = new Vector3(0f, 0f, 0f);
+            Player1.GetComponent<Rigidbody2D>().velocity = new Vector2(0f, 0f);
         }
 
         var position = transform.position;

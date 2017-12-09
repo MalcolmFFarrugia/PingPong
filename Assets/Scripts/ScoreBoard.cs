@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ScoreBoard : MonoBehaviour {
 
@@ -22,7 +23,10 @@ public class ScoreBoard : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		if(player1 == 7 || player2 == 7)
+        {
+            SceneManager.LoadScene(2);
+        }
 	}
 
     public void PlayerOneGoal() {

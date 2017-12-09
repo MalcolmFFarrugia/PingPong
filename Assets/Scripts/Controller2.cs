@@ -7,6 +7,12 @@ public class Controller2 : MonoBehaviour
     public GameObject Player2;
     public float boundY = 3.35f;
 
+    public float speed = 5f;
+
+
+
+
+
     // Use this for initialization
     void Start() {
 
@@ -14,19 +20,12 @@ public class Controller2 : MonoBehaviour
 
     // Update is called once per frame
     void Update() {
+        if (Input.GetMouseButtonDown(0))
+        {
 
-        if (Input.GetKey(KeyCode.W))
-        {
-            Player2.GetComponent<Rigidbody2D>().velocity = new Vector3(0f, 5f, 0f);
         }
-        else if (Input.GetKey(KeyCode.S))
-        {
-            Player2.GetComponent<Rigidbody2D>().velocity = new Vector3(0f, -5f, 0f);
-        }
-        else if (!Input.anyKey)
-        {
-            Player2.GetComponent<Rigidbody2D>().velocity = new Vector3(0f, 0f, 0f);
-        }
+
+       
 
         var position = transform.position;
         if (position.y > boundY)
