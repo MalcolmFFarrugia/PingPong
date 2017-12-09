@@ -2,14 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Controller : MonoBehaviour
-{
+public class Controller : MonoBehaviour {
     public GameObject Player1;
     public float boundY = 3.35f;
 
     // Use this for initialization
-    void Start()
-    {
+    void Start() {
 
     }
 

@@ -8,14 +8,12 @@ public class Controller2 : MonoBehaviour
     public float boundY = 3.35f;
 
     // Use this for initialization
-    void Start()
-    {
+    void Start() {
 
     }
 
     // Update is called once per frame
-    void Update()
-    {
+    void Update() {
 
         if (Input.GetKey(KeyCode.W))
         {

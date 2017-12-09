@@ -37,9 +37,9 @@ public class Ball : MonoBehaviour {
             //launching ball
             rb.velocity = launchDirection;
 
-        }
+    }
 
-    void Update(){
+    void Update() {
         if(transform.position.x < -13f)
         {
             ScoreBoard.instance.PlayerTwoGoal();

@@ -25,14 +25,12 @@ public class ScoreBoard : MonoBehaviour {
 		
 	}
 
-    public void PlayerOneGoal()
-    {
+    public void PlayerOneGoal() {
         player1 += 1;
         Score1.text = player1.ToString();
     }
 
-    public void PlayerTwoGoal()
-    {
+    public void PlayerTwoGoal() {
         player2 += 1;
         Score2.text = player2.ToString();
     }
