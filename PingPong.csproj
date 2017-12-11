@@ -81,7 +81,6 @@
     <Compile Include="Assets\Scripts\Ball.cs" />
     <Compile Include="Assets\Scripts\Controller.cs" />
     <Compile Include="Assets\Scripts\Controller2.cs" />
-    <Compile Include="Assets\Scripts\MovingObj.cs" />
     <Compile Include="Assets\Scripts\Play.cs" />
     <Compile Include="Assets\Scripts\ScoreBoard.cs" />
   </ItemGroup>
