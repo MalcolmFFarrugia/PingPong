@@ -6,7 +6,7 @@ public class Controller2 : MonoBehaviour
 {
     public GameObject Player2;
     public float boundY = 5.5f;
-    public Rigidbody2D rb2;
+    private Rigidbody2D rb2;
 
 
     // Use this for initialization
