@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Ball : MonoBehaviour {
 
     Rigidbody2D rb;
     Vector2 vel;
+
 
     // Use this for initialization
     void Start() {
@@ -40,15 +42,16 @@ public class Ball : MonoBehaviour {
     }
 
     void Update() {
-        if(transform.position.x < -13f)
+
+        if (transform.position.x < -13f)
         {
-            ScoreBoard.instance.PlayerTwoGoal();
+            Scoreboard.instance.GivePlayerTwoAPoint();
             Start();
         }
 
         if (transform.position.x > 13f)
         {
-            ScoreBoard.instance.PlayerOneGoal();
+            Scoreboard.instance.GivePlayerOneAPoint();
             Start();
         }
     }
