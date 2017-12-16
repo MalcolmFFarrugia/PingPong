@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Scoreboard : MonoBehaviour {
     public static Scoreboard instance;
@@ -13,6 +14,7 @@ public class Scoreboard : MonoBehaviour {
     int player2 = 0;
 
 
+
     // Use this for initialization
     void Start () {
         instance = this;
@@ -20,7 +22,10 @@ public class Scoreboard : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
+        if(player2 >= 2|| player1 >= 2)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
     }
 
     public void GivePlayerTwoAPoint()
